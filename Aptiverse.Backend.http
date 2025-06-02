@@ -1,0 +1,6 @@
+@Aptiverse.Backend_HostAddress = http://localhost:5225
+
+GET {{Aptiverse.Backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
