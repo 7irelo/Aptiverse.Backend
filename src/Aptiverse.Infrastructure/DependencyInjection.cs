@@ -1,4 +1,5 @@
 ﻿using Aptiverse.Application;
+using Aptiverse.Application.AI.Services;
 using Aptiverse.Application.Users.Services;
 using Aptiverse.Domain.Interfaces;
 using Aptiverse.Infrastructure.Data;
@@ -22,6 +23,7 @@ namespace Aptiverse.Infrastructure
 
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IAiTaskService, AiTaskService>();
 
             return services;
         }
